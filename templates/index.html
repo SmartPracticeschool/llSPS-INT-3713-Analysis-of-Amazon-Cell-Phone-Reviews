@@ -1,0 +1,65 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Of Amazon Cell Phone Reviews</title>
+	
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<style>
+	body {
+	  background-color: burlywood;
+	  background-repeat: no-repeat;
+	  background-attachment: fixed;
+	  background-size: 100% 100%;
+	}
+	</style>
+<br>
+
+<center>
+	<font font family="Maiandra GD"> 
+		<b> 
+			<h1 style="color: rgb(12, 12, 12);">Amazon Cell Phone Review</h1>
+		</b>  
+	</font>
+	<hr>
+	<form action="{{ url_for('page2')}}"method="post">
+	<center> 
+		<font size="10"> 
+			<textarea style="font-size : 1rem;
+			resize :none;
+			 border-radius: 15px;
+			 font-weight: bold;
+			padding: 10px;" type="string" name="Review" placeholder="Review" required="required" rows="3" cols="50"/></textarea>
+			<br>
+			<br>
+			<center>
+			<input style="position: relative;
+			display: inline-block;
+			padding: 25px 30px;
+			margin: 40px auto;
+			color: #31042d;
+			text-decoration: none;
+			text-transform: uppercase;
+			transition: 0.5s;
+			letter-spacing: 4px;
+			overflow: hidden;
+		
+			background-color:rgb(211, 27, 27);
+			border:none;" type="submit" class="btn btn-primary btn-block btn-Large"  value="Predict" style="width:10%" />
+		</font>
+	</center>
+</center>
+
+</form>
+{{ prediction_text }}
+<br>
+<br>
+
+<br>
+
+
+</p>
+</body>
+</html>
